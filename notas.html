@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="notas.js">"Ative o seu javascript"</script>
+  <link href="notas.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Suas notas</h1>
+  <br/>
+  <br/>
+  <div>
+    <form>
+      <div class="form-control">
+        <label for="nova-nota">Nova nota</label>
+        <textarea id="nova-nota"></textarea>
+      </div>
+      <div class="form-control">
+        <span>Categoria</span>
+        <select id="categoria">
+          <option>Trabalho</option>
+          <option>Casa</option>
+          <option>Estudo</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="tags">Tags (separe com ";")</label>
+        <input id="tags">
+      </div>
+    </form>
+    <button onclick="salvarNota()">Salvar Nota</button>
+  </div>
+  <ul class="lista-notas" id="lista-notas"></ul>
+</body>
+</html>

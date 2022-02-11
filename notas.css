@@ -1,0 +1,37 @@
+body {
+  font-size: 14px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.form-control {
+  margin-bottom: 16px;
+}
+
+.form-control > textarea {
+  width: 100%;
+  min-height: 80px;
+}
+
+.form-control > input {
+  width: 100%;
+}
+
+.form-control > label, .form-control > span {
+  display: block;
+}
+
+form > button {
+  margin-top: 24px;
+}
+
+.lista-notas {
+  margin-top: 24px;
+  border: 1px solid #000;
+}
